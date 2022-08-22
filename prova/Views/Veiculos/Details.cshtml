@@ -1,0 +1,66 @@
+﻿@model prova.Models.Veiculo
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+</head>
+<body>
+    <div>
+        <h4>Veiculo</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Descricao)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Descricao)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.MotorizacaoId)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.MotorizacaoId)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Fabricante)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Fabricante)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Ano)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Ano)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Valor)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Valor)
+            </dd>
+    
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.VeiculoId }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+</body>
+</html>
